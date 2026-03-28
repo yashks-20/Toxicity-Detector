@@ -1,59 +1,62 @@
-#Toxicity Detector 
+# Toxicity Detector (Deep Learning)
 
-This project is a simple deep learning model that detects toxic comments from text. It takes a sentence as input and predicts whether it belongs to categories like insult, threat, obscene, etc.
+This project is a deep learning model that detects toxic comments from text.
+It takes a sentence as input and predicts whether it belongs to categories like insult, threat, obscene, etc.
 
-I built this project to understand how real-world NLP pipelines work — from text preprocessing to model training and prediction.
-
----
-
-How it works
-
-The input text is converted into numbers using a TextVectorization layer 2. The processed text is passed through a Bidirectional LSTM model 3.
+This project was built to understand how real-world NLP pipelines work, from text preprocessing to model training and prediction.
 
 ---
 
-Tech Used
+## How it works
 
-* Python * TensorFlow / Keras * Pandas, NumPy
-
----
-
-Project Structure
-
-py` → trains the model * `predict. py` → loads model and makes predictions * `Toxicity_Detector. h5` → saved trained model * `vocab. txt` → saved vocabulary for consistent predictions * `.
+1. The input text is converted into numbers using a TextVectorization layer
+2. The processed text is passed through a Bidirectional LSTM model
+3. The model outputs probabilities for different toxicity labels
 
 ---
 
-Dataset
+## Tech Used
+
+* Python
+* TensorFlow / Keras
+* Pandas
+
+---
+
+## Project Structure
+
+* `train.py` → trains the model
+* `predict.py` → loads model and makes predictions
+* `Toxicity_Detector.h5` → saved trained model
+* `.gitignore` → ignores dataset and unnecessary files
+
+---
+
+## Dataset
 
 The dataset used in this project is around 66 MB and is not included in this repository.
 
 To run the project:
 
-Download the dataset from the original source 2. Place it in the project folder 3.
+1. Download the dataset from the original source from kaggle from the link "https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge"
+2. Place it in the project folder
+3. Update the file path in the code if needed
+4. Train the model using 
 
 ---
 
-Important Note
+## Why this project?
 
-The model depends on the same vocabulary used during training. txt` must be present while making predictions.
+This project focuses on understanding:
 
----
-
-Why this project?
-
-This project focuses more on understanding:
-
-* How text is converted into numerical form * How LSTM models process sequential data * How to maintain consistency between training and prediction
+* How text is converted into numerical form
+* How LSTM models process sequential data
+* How to maintain consistency between training and prediction
 
 ---
 
-Future Improvements
+## Future Improvements
 
-* Improve model accuracy * Reduce training time * Build a simple web interface for predictions
-
----
-
-Author
-
-Made as part of a college AI/ML project.
+* Improve model accuracy
+* Reduce training time
+* Build a simple interface for predictions
