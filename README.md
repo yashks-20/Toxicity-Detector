@@ -25,8 +25,8 @@ This project was built to understand how real-world NLP pipelines work, from tex
 
 ## Project Structure
 
-* `train.py` → trains the model
-* `predict.py` → loads model and makes predictions
+* `Train.py` → trains the model
+* `Predict.py` → loads model and makes predictions
 * `Toxicity_Detector.h5` → saved trained model
 * `.gitignore` → ignores dataset and unnecessary files
 
@@ -41,7 +41,8 @@ To run the project:
 1. Download the dataset from the original source from kaggle from the link "https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge"
 2. Place it in the project folder
 3. Update the file path in the code if needed
-4. Train the model using 
+4. Train the model using `Train.py`
+5. After training on the data test the model using `Predict.py`
 
 ---
 
@@ -60,3 +61,5 @@ This project focuses on understanding:
 * Improve model accuracy
 * Reduce training time
 * Build a simple interface for predictions
+
+
